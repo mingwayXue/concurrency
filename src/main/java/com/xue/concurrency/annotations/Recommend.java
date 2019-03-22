@@ -5,11 +5,11 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-/** 标记为【线程安全】
+/** 标记为【推荐】
  * Created by Mingway on 2019/3/21.
  */
 @Target(ElementType.TYPE)   //类注解
 @Retention(RetentionPolicy.SOURCE)  //表示不加入到编译里面，在此仅作标记使用
-public @interface ThreadSafe {
+public @interface Recommend {
     String value() default "";
 }
